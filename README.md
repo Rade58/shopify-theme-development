@@ -148,4 +148,9 @@ shopify theme serve
 - LINK TO AN INSTANCE OF THEME EDITOR (YOU AN ONLY **UNDEPLOY THIS BY RUNNING `shopify logout`**)
 
 - AND PREVIEW LINK
- 
+
+## THEME STAYS ON YOUR COMPUTER AS YOU IMAGINE, BUT IF YOU WANT TO PUSH OR PUBLISH THEME, YOU CAN USE THESE COMMANDS
+
+[`push`](https://shopify.dev/themes/tools/cli/theme-commands#push)
+
+[`publish`](https://shopify.dev/themes/tools/cli/theme-commands#publish)
