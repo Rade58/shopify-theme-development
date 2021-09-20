@@ -124,3 +124,28 @@ I SPECIFIED OUR THEME IN GITIGNORE AND COMMITED (JUST IN CASE BECAUSE I DON'T WA
 ```git
 /theme=<theme id>
 ```
+
+# RUNNING OUR THEME
+
+READ HERE: <https://shopify.dev/themes/tools/cli/theme-commands#serve>
+
+I FIRST NAVIGATED TO OUR THEME
+
+```
+cd themeid=<id>
+```
+
+AND RUNNED
+
+```
+shopify theme serve
+```
+
+**YOU ARE GETTING 3 THINGS**
+
+- LOCALHOST WHERE YOUR DEVELOPMENT THEME IS BEING SERVED
+
+- LINK TO AN INSTANCE OF THEME EDITOR (YOU AN ONLY **UNDEPLOY THIS BY RUNNING `shopify logout`**)
+
+- AND PREVIEW LINK
+ 
