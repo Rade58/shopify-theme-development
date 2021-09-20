@@ -28,6 +28,16 @@ THERE IS ONE MORE IMPORTANT THING
 ***
 ***
 
+***
+***
+
+AND THIS IS WHAT SHOPIFY SAYS:
+
+>> Shopify CLI replaces Theme Kit for most Shopify theme development tasks. You should use Shopify CLI if you're working on Online Store 2.0 themes. You should use Theme Kit instead of Shopify CLI only if you're working on older themes or you have Theme Kit integrated into your existing theme development workflows.
+
+***
+***
+
 ## WE ARE GOING TO LEARN THEME KIT APPROACH BECAUSE THAT IS THE ONLY WAY TO KNOW HOW TO MAYBE CUSTOMIZE SOME OLDER THEME THAT IS EXISTING FOR THE LONG TIME AND MERCHANT WANTS TO CHANGE SOMETHING
 
 I GUESS THAT WOULD BE PROBABLE SCENARIO
@@ -53,3 +63,8 @@ YOU CAN SHARE THIS PREVIEW LIKE YOU SEE, YOU HAVE A BUTTON TO COPY A LINK
 AGAIN, WE HAVE GENERATED PASSWORD AND ANYONE HO WOULD LIIKE TO SEE IT NEEDS TO ENTER THE PASSWORD (ALREADY I EXPLAIN YOU THT)
 
 ## WE WILL INSTALL THEME KIT NOW
+
+WE CAN FOLLOW THIS TO INTALL IT
+
+<https://shopify.dev/themes/tools/theme-kit>
+
