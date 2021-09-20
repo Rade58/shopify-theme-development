@@ -61,3 +61,48 @@ YOU USE `shopify logout` TO LOG OUT FROM YOUR CURRENT STORE
 <https://shopify.dev/themes/tools/cli/core-commands>
 
 FOR EXAMPLE YOU CAN POPULATE STORE WITH DAT AND DO ALL KIND OF THINGS, THAT ARE VERY HELPFUL
+
+## WE WOUL USE `shopify init` TO CLONE REPO (WE WOULD USE THIS IF WE ARE STARTING FROM SCRATCH), BUT WE WILL CONNECT TO AN EXISTING THEME
+
+WE RE GOING TO EXECUTE `shopify theme serve`
+
+FIRST GO INTO SHOPIFY STORE DASBORD AND FIND ID OF YOUR THEME (DO THIS FOR THEME YOU COPIED)
+
+CLICKK ON `Theme` (LEFT MENU) --> YOU SHOUD SEE YOUR PUBLISHED THEME AND A LITTLE BIT LOWER YOU HAVE COPY THEME WE MADE, CLICK ON `Customie` FOR MENTIONED THEME
+
+**THING WE NEED IS NUMBER INSIDE URL, LIKE THI `/45246246512/`**
+
+WE ARE PULLING (RETREIVING THEME FROM SHOPIFY) (MAKE SURE TO NAVIGATE IN YOUR FILE SYSTEM WHERE YOU WANT (BUT IF YOU ARE NOT IN THAT FOLDER, YOU CAN SPECIFY IT IN COMMAND))
+
+***
+***
+
+WHEN I WAS DOING THIS THERE WAS A PROBLEM, AND PROBLEM WAS THAT YOU COULDN'T PULL A THHEME IF YOU WERE NOT STAFF AT YOUR STORE
+
+[THIS IS A WORKAROUND](https://github.com/Shopify/shopify-cli/issues/1361#issuecomment-879426041)
+
+>> This happens because when you create a Development store, it won't properly link your Shopify Partners account to the new created store.
+
+>> A partial solution was mentioned here #1309 (comment)
+
+>> This is what I do to solve the problem on my side:
+
+>> 1.- Logout from the Development store admin dashboard
+>> 2.- Login again by visiting the direct URL. Example: `https://[store-name].myshopify.com/admin`
+
+>> Here use your Shopify Partners account (the one that you used to create the development store). Don't worry if you see an error message or if you have to login again. Ideally you should see the admin dashboard again.
+
+>> 4.- Login to your Shopify account (not Partners). Go to: https://shopify.com/login
+
+>> At this point you should see the new Development store listed. This means it is now linked to your account.
+
+>> Go back to the CLI and try again. You may have to do shopify whoami and/or shopify logout shopify login
+
+***
+***
+
+NOW WE CAN PULL
+
+```
+shopify theme pull --themeid=<number I mentioned> <path where you wwant to put your theme on your filesystem>
+```
