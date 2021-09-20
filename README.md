@@ -61,7 +61,8 @@ AGAIN, WE HAVE GENERATED PASSWORD AND ANYONE HO WOULD LIIKE TO SEE IT NEEDS TO E
 
 ## WE WILL INSTALL THEME KIT NOW
 
-WE CAN FOLLOW THIS TO INTALL IT
+WE CAN FOLLOW THIS TO INSTALL IT
 
-<https://shopify.dev/themes/tools/theme-kit>
+<https://shopify.dev/themes/tools/theme-kit/getting-started>
 
+BUT I JUST COULDN'T INSTALL IT
