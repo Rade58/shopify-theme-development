@@ -51,3 +51,7 @@ WE NEED TO PROVIDE STORE URL (OUR DOMAIN `<something>.myshopify.com`)
 ```
 shopify login --store <something>.myshopify.com 
 ```
+
+BROWSERS WINDOW WILL POP UP AND YOU WILL SIGN IN AND THAT IS IT
+
+YOU USE `shopify logout` TO LOG OUT FROM YOUR CURRENT STORE
