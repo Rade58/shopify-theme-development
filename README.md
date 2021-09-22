@@ -161,13 +161,7 @@ WE CAN COMMIT AND PUSH OUR THEME TO GITHUB
 
 READ HERE: <https://shopify.dev/themes/tools/cli/theme-commands#serve>
 
-I FIRST NAVIGATED TO OUR THEME
-
-```
-cd themeid=<id>
-```
-
-AND RUNNED
+OUR THEME IS IN OUR PROJECT FOLDER SO WE CAN RUN
 
 ```
 shopify theme serve
