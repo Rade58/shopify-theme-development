@@ -230,3 +230,29 @@ SAME PASSWORD YOU NEED TO ENTER FOR THE PREVIEW LINK
 IT WORKED, I EDITED AND SAVED
 
 AND I RELOADED LOCALHOST, AND I CAN SEE THE CHANGES I MADE WERE APPLIED
+
+# THERE IS A ONE PROBLEM AND THAT IS AN ERROR MESSAGE THAT IS SHOWN AFTER I SERVE THE THEME
+
+IT LOOKS LIKE THIS
+
+```
+[Note] You cannot use gems with Shopify CLI.
+[LoadError] cannot load such file -- 2.7/ffi_c
+       They are disabled.
+       Please don't modify the CLI locally.
+       If you would like to contribute to the CLI project, please refer to
+       https://github.com/Shopify/shopify-cli/blob/main/.github/CONTRIBUTING.md
+
+```
+
+I DON'T KNOW IT'S IMPACT
+
+ONY THING I FOUND IS SOME PEOPLE POSTING QUESTIONS ABOUT THIS ERROR
+
+<https://githubmemory.com/repo/Shopify/shopify-app-cli/issues?cursor=Y3Vyc29yOnYyOpK5MjAyMS0wNy0yNFQwODoxNDo0OSswODowMM44vcis&pagination=next&page=2>
+
+<https://community.shopify.com/c/technical-q-a/wsl-shopify-cli-3-0-ffi-c-loaderror/m-p/1271505>
+
+GITHUB ISSUE
+
+<https://github.com/Shopify/shopify-cli/issues/1405>
