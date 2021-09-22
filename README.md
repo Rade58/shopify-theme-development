@@ -4,10 +4,10 @@ YES WE CAN USE SHOPIFY CLI TO DO THAT ALSO
 
 <https://shopify.dev/themes/tools/cli/core-commands#populate>
 
-I WILL TRY POPULATING PRODUCTS
+I WILL TRY POPULATING PRODUCTS, AROUND 20 OF THEM
 
 ```
-shopify populate products 
+shopify populate products --count 20 
 ```
 
 ## BUT YOU COULD DO THAT MANUALLY
