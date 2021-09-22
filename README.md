@@ -330,3 +330,9 @@ YES YOU CAN DELETE THEME FROM CLI
 LEARN ABOUT OTHER THEMES ON YOUR OWN
 
 <https://shopify.dev/themes/tools/cli/theme-commands#delete>
+
+# YOU CAN ALWAYS SEE WHO YOU ARE AND IN WHAT STORE YOU ARE LOGGED IN BY EXECUTING THIS
+
+```
+shopify whoami
+```
