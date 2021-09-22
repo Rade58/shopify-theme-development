@@ -227,6 +227,12 @@ SAME PASSWORD YOU NEED TO ENTER FOR THE PREVIEW LINK
 
 [`publish`](https://shopify.dev/themes/tools/cli/theme-commands#publish)
 
+BUT BEFORE MENTIONED COMMANDS YOU ALSO WANT TO CHECK FOR ERRORS
+
+AND THIS CHECKS FOR ERRORS
+
+[`check`](https://shopify.dev/themes/tools/cli/theme-commands#check)
+
 # OK, NOW I OPENED EDITOR AND TRIED TO CHANGE SOME STUFF
 
 IT WORKED, I EDITED AND SAVED
