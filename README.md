@@ -224,3 +224,9 @@ SAME PASSWORD YOU NEED TO ENTER FOR THE PREVIEW LINK
 [`push`](https://shopify.dev/themes/tools/cli/theme-commands#push)
 
 [`publish`](https://shopify.dev/themes/tools/cli/theme-commands#publish)
+
+# OK, NOW I OPENED EDITOR AND TRIED TO CHANGE SOME STUFF
+
+IT WORKED, I EDITED AND SAVED
+
+AND I RELOADED LOCALHOST, AND I CAN SEE THE CHANGES I MADE WERE APPLIED
