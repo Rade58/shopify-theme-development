@@ -20,15 +20,9 @@ EXTRACTIT
 
 COPY MINIFIED VERSION OF CSS AND JAVASCRIPT AND PUT THEM IN `/assets` FOLDER (TOGETHER WITH MAP FILES)
 
-```
-mkdir assets/bootstrap
-```
+**I TRIED ADDING FOLDER BUT YOU CAN'T DO THI**
 
-I ADDED THIS
-
-```
-ls assets/bootstrap
-```
+I ADDED THIS INSIDE `assets`
 
 ```zsh
 bootstrap.min.css  bootstrap.min.css.map  bootstrap.min.js  bootstrap.min.js.map
@@ -51,5 +45,19 @@ IN head SECTION I THREW THIS
 - `code layout/theme.liquid`
 
 ```liquid
+{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+  
+```
+
+AND I ADDED THIS AT THE END OF body SECTION
 
 ```
+  {{ 'bootstrap.min.js' | asset_url | script_tag }}
+```
+
+# NOW LETS TRY ADDING SOME BOOTSTRAP CLASS ON SOMETHING
+
+I'LL TRY ADDING SOME CLASS HERE: `sections/header.liquid`
+
+I ADDED THE BUTTON AND ADDED IT A CLASS AND IT SEEMS THAT BOOTSTRAP IS WORING
+

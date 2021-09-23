@@ -106,7 +106,8 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
-    
+    {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+   
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
@@ -166,5 +167,7 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+      {{ 'bootstrap.min.js' | asset_url | script_tag }}
   </body>
 </html>
