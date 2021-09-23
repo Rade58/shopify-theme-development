@@ -12,6 +12,8 @@ YOU CAN SEE **Menus**
 
 I HAVE TWO MENUS: Main (WITH ITEMS Home, Catalog, Contact), AND Footer (WITH ITEMS Search)
 
+**AND EVERY OF THAT MENUES HAS `HANDLE` `AND HANDLES ARE USED TO ACCESS ATTRIBUTES OF LIQUID OBJECTS`**
+
 YOU CAN CLICK ON Main OR Footer AND ADD OR REMOVE ITEMS FOR THESE NAVIGATION ELEMENTS
 
 I AM GOING TO ADD NEW MENU, I CALLLED IT Products AND I ADDED ITEM THAT IS BASICALLY NAVIGATION THAT LEADS TO PAGE OF AALL PRODUCTS (JUST TO SHOW YOU THAT YOU CAN DO THIS)
@@ -41,5 +43,35 @@ I EXTRACTED THIS FROM `sections/header.liquid`
 IT IS AN UNORDERED LIST WITH LIST ITEM AND LIST ITEMS ARE WRAPPED INTO FOR LOOP 
 
 ```liquid
-
+<ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
+  {%- for childlink in link.links -%}
+    <li>
+      {%- if childlink.links == blank -%}
+        <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+          {{ childlink.title | escape }}
+        </a>
+      {%- else -%}
+        <details>
+          <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
+            {{ childlink.title | escape }}
+            {% render 'icon-caret' %}
+          </summary>
+          <ul class="header__submenu list-menu motion-reduce">
+            {%- for grandchildlink in childlink.links -%}
+              <li>
+                <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                  {{ grandchildlink.title | escape }}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </details>
+      {%- endif -%}
+    </li>
+  {%- endfor -%}
+</ul>
 ```
+
+
+
+
