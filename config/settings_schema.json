@@ -7,6 +7,27 @@
     "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn",
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
+
+  {
+    "name": "lovely colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "beutiful-color-1",
+        "default": "#183a52",
+        "label": "some beutiful color 1",
+        "info": "This is so nice"
+      },
+      {
+        "type": "color",
+        "id": "beutiful-color-2",
+        "default": "#8a2650",
+        "label": "some beutiful color 2",
+        "info": "This is so nice times two"
+      }
+    ]
+  },
+
   {
     "name": "t:settings_schema.colors.name",
     "settings": [
