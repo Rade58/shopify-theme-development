@@ -106,7 +106,9 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
+
     {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+    {{ '1_my_css.css' | asset_url | stylesheet_tag }}
 
     
     {%- unless settings.type_body_font.system? -%}
@@ -127,6 +129,8 @@
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
+
+    {% section '1_header' %}
 
     {% section 'announcement-bar' %}
     {% section 'header' %}
