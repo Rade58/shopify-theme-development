@@ -1,17 +1,30 @@
 <nav class="nav-my">
 
-<ul class="nav nav-list" >
+<ul class="nav nav-pills nav-fill" >
   {% for link in linklists.main-menu.links %}
 
     {% assign child_list_handle = link.title | handleize %}
+
 
     {% if linklists[child_list_handle].links != blank %}
       
     <li class="nav-item">
       <a 
         href="{{link.url}}"
-        class="nav-link"
-        aria-current="page" 
+
+        {% if link.child_active %}
+
+        class="nav-link active"
+
+        aria-current="page"
+
+        {% else %}
+
+          class="nav-link"
+
+        {% endif %}
+
+        
       >
         {{ link.title }}  
       </a>
@@ -21,11 +34,21 @@
 
       <li class="nav-item">
         <a 
-          href="{{link.url}}"
+          href="{{childlink.url}}"
+          {% if childlink.child_active %}
+
+        class="nav-link active"
+
+        aria-current="page"
+
+        {% else %}
+
           class="nav-link"
-          aria-current="page" 
+
+        {% endif %}
+          
         >
-          {{ link.title | escape }}  
+          {{ childlinklink.title | escape }}  
         </a>
       </li>
 
@@ -37,8 +60,18 @@
     <li class="nav-item">
       <a 
         href="{{link.url}}"
+        {% if link.child_active %}
+
         class="nav-link active"
-        aria-current="page" 
+
+        aria-current="page"
+
+        {% else %}
+
+          class="nav-link"
+
+        {% endif %}
+        
       >
         {{ link.title }}  
       </a>

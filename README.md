@@ -58,7 +58,7 @@ ALSO **KNOW IN YOUR HEAD THAT ONLY THIS IS POSSIBLE BECAUSE SOMEONE (ME OR SOMEO
     <li class="nav-item">
       <a 
         href="{{link.url}}"
-        class="nav-link active"
+        class="nav-link"
         aria-current="page" 
       >
         {{ link.title }}  

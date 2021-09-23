@@ -1,7 +1,11 @@
 .nav-my {
-  background-color: rgb(233, 142, 180);
+  background-color: #c1d9e9;
 }
 
-.nav-list {
+.nav-my > ul {
   font-size: 16px;
+}
+
+.nav-my > ul a.active {
+  background-color: rgb(202, 136, 177);
 }
