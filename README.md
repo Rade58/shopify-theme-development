@@ -4,7 +4,7 @@ YOU CAN EDIT FILE `config/settings_schema.json`
 
 LIKE YOU SEE THIS FILE IS INSIDE CONFIGURATION FOLDER
 
-**this is used for adding some settings into your editor; and what you add it is going to be seen in your editor like something that you can apply by editing inside editor**
+**this is used for adding some settings (`SOME PART OF UI OF EDITOR`) into your editor; and what you add it is going to be seen in your editor like something that you can apply by editing inside editor**
 
 ## HOW IT WORKS, I'LL SHOW YOU FROM EXAMPLE
 
