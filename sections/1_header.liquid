@@ -12,7 +12,7 @@
       <a 
         href="{{link.url}}"
 
-        {% if link.child_active %}
+        {% if link.active or link.child_active %}
 
         class="nav-link active"
 
@@ -35,7 +35,7 @@
       <li class="nav-item">
         <a 
           href="{{childlink.url}}"
-          {% if childlink.child_active %}
+          {% if  childlink.active or childlink.child_active %}
 
         class="nav-link active"
 
@@ -48,7 +48,7 @@
         {% endif %}
           
         >
-          {{ childlinklink.title | escape }}  
+          {{ link.title | escape }}  
         </a>
       </li>
 
@@ -60,7 +60,7 @@
     <li class="nav-item">
       <a 
         href="{{link.url}}"
-        {% if link.child_active %}
+        {% if link.active or link.child_active %}
 
         class="nav-link active"
 

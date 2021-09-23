@@ -21,18 +21,31 @@ ALSO **KNOW IN YOUR HEAD THAT ONLY THIS IS POSSIBLE BECAUSE SOMEONE (ME OR SOMEO
 ```liquid
 <nav class="nav-my">
 
-<ul class="nav nav-list" >
+<ul class="nav nav-pills nav-fill" >
   {% for link in linklists.main-menu.links %}
 
     {% assign child_list_handle = link.title | handleize %}
+
 
     {% if linklists[child_list_handle].links != blank %}
       
     <li class="nav-item">
       <a 
         href="{{link.url}}"
-        class="nav-link"
-        aria-current="page" 
+
+        {% if link.active or link.child_active %}
+
+        class="nav-link active"
+
+        aria-current="page"
+
+        {% else %}
+
+          class="nav-link"
+
+        {% endif %}
+
+        
       >
         {{ link.title }}  
       </a>
@@ -42,9 +55,19 @@ ALSO **KNOW IN YOUR HEAD THAT ONLY THIS IS POSSIBLE BECAUSE SOMEONE (ME OR SOMEO
 
       <li class="nav-item">
         <a 
-          href="{{link.url}}"
+          href="{{childlink.url}}"
+          {% if  childlink.active or childlink.child_active %}
+
+        class="nav-link active"
+
+        aria-current="page"
+
+        {% else %}
+
           class="nav-link"
-          aria-current="page" 
+
+        {% endif %}
+          
         >
           {{ link.title | escape }}  
         </a>
@@ -58,8 +81,18 @@ ALSO **KNOW IN YOUR HEAD THAT ONLY THIS IS POSSIBLE BECAUSE SOMEONE (ME OR SOMEO
     <li class="nav-item">
       <a 
         href="{{link.url}}"
-        class="nav-link"
-        aria-current="page" 
+        {% if link.active or link.child_active %}
+
+        class="nav-link active"
+
+        aria-current="page"
+
+        {% else %}
+
+          class="nav-link"
+
+        {% endif %}
+        
       >
         {{ link.title }}  
       </a>
