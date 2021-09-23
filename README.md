@@ -33,3 +33,21 @@ ls assets/bootstrap
 ```zsh
 bootstrap.min.css  bootstrap.min.css.map  bootstrap.min.js  bootstrap.min.js.map
 ```
+
+## LINK THIS FILES BY EDITING `layout/theme.liquid`
+
+**FOR THE FIRST TIME WE WILL BE WRITTING LIQUID SPECIFIC SYNTAX**
+
+WE ARE GOING TO USE `asset_url` FILTER FOR THE FIRT TIME
+
+IT SHOULD BE SELF EXPLANATORY IF YOU TAKE IN MIND THAT LIQUID IS TEMPLATING LANGUAGE AND THAT WE ARE TEMPLATING; **THERE FOR I WONT BE EXPLAINING IT TOO MUCH SINCE YOU HAVE DOCUMENTATION**
+
+[SEE HERE](https://shopify.dev/api/liquid/filters/url-filters)
+
+IN head SECTION I THREW THIS
+
+- `code layout/theme.liquid`
+
+```liquid
+
+```
